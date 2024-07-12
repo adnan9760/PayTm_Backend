@@ -14,6 +14,7 @@ const router = express.Router();
 router.post("/SendOTP", async (req, res) => {
   try {
     const { userName } = req.body;
+    console.log(userName);
     const userexist = await userSchema.findOne({ userName });
 
     if (userexist) {
