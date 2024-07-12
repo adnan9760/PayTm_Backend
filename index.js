@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "pay-tm-frontend-navy.vercel.app",
+    origin: "*",
     credentials: true
   })
 );
