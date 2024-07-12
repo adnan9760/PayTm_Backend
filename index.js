@@ -14,6 +14,7 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: "pay-tm-frontend-navy.vercel.app",
+    credentials: true
   })
 );
 
